@@ -45,7 +45,7 @@ varstor=numeric()
 for (j in 1:repeatn){
 brownlow = 0
 for (i in 1:count) {
-  sam=sample(days,size=30,replace = T)
+  sam=sample(days,size=34,replace = T)
   y=duplicated(sam)
   if (sum(y)>0) brownlow=brownlow+1
   else brownlow = brownlow - 2
@@ -77,3 +77,4 @@ print(vSorted[900])
 
 <!--Discussion and conclusion here.  If professor Brownlow is consistantly making or losing money how could he change his payout so that his profits center on zero?  Also discuss what size his class should be in order to have his current scheme balance at zero profit.!-->
 
+If the payout is 100 or less, the profit will center and remain at zero. If the class size is 30, the scheme balance will be zero.
